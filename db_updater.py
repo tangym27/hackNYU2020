@@ -1,8 +1,3 @@
-# UncommonApp
-# Dennis Chen, T Fabiha, Addison Huang, Michelle Tang
-# P#02: The End
-# ''' this file stores the updating database code'''
-
 import sqlite3
 
 
