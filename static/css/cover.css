@@ -2,6 +2,36 @@
  * Globals
  */
 
+ @media only screen and (max-width: 2000px) {
+    body {
+       padding-left: 18rem;
+       padding-right: 18rem;
+    }
+ }
+
+ @media only screen and (max-width: 960px) {
+    body {
+       padding-left: 12rem;
+       padding-right: 12rem;
+    }
+ }
+
+
+  @media only screen and (max-width: 768px) {
+     body {
+        padding-left: 3rem;
+        padding-right: 3rem;
+     }
+  }
+
+
+ @media only screen and (max-width: 480px) {
+    body {
+       padding-left: 2rem;
+       padding-right: 2rem;
+    }
+ }
+
 
 /* Custom default button */
 .btn-secondary,
@@ -27,8 +57,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+  /* padding-left: 18rem;
+  padding-right: 18rem; */
 
-  
 }
 
 /*
