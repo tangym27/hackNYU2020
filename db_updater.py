@@ -36,8 +36,6 @@ def addMatches(id1, id2, id3, id4, restaurant):
     db.close()
 
 
-
-
 def addDietRestrictions(userOrRestaurant, id, isVeg, isKos, isHal, isPes, isVegan):
     DB_FILE="./data/DAC.db"
     db = sqlite3.connect(DB_FILE)

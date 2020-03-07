@@ -21,6 +21,8 @@ def decimal(number):
 @app.route('/users/<int:id>')
 def single_user():
     return get_users_by_ID(get_db())
+
+    
 # ________________________________
 def get_db():
     db = getattr(g, '_database', None)
