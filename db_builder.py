@@ -11,10 +11,6 @@ def usersAccounts(): #creates the users db
     command = "CREATE TABLE usersAccounts(id INTEGER PRIMARY KEY AUTOINCREMENT, fullName TEXT, username TEXT, password TEXT, rating REAL, longitude REAL, latitude REAL)"
     c.execute(command)
 
-'''
-
-
-'''
 def restaurantsAccounts(): #creates the puzzles db
     DB_FILE="./data/DAC.db"
     db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create

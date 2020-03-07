@@ -12,7 +12,6 @@ def addUser(fullName, username, password):
     db.commit()
     db.close()
 
-addUser("a","as","asf")
 
 def addRestaurantAccounts(fullName, username, password, name, description, longitude, latitude ):
     DB_FILE="./data/DAC.db"
@@ -37,7 +36,6 @@ def addMatches(id1, id2, id3, id4, restaurant):
     db.close()
 
 
-addMatches(1,2,0,0, "donalds")
 
 
 def addDietRestrictions(userOrRestaurant, id, isVeg, isKos, isHal, isPes, isVegan):
@@ -50,4 +48,8 @@ def addDietRestrictions(userOrRestaurant, id, isVeg, isKos, isHal, isPes, isVega
     db.commit()
     db.close()
 
-addDietRestrictions(1,1,0,0,0,0,0)
+
+# addUser("a","as","asf")
+# addRestaurantAccounts("fullname","bob","s burger" ,"mcdonlads","as", 15.3,234.2)
+# addMatches(1,2,0,0, "donalds")
+# addDietRestrictions(1,1,0,0,0,0,0)
