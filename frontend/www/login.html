@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Signin Template · Bootstrap</title>
+    <title>Login</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
 
@@ -50,27 +50,40 @@
   </head>
   <body class="text-center">
 
-    <form class="form-signin" action="/auth" method= "POST">
-      <div class="form">
 
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-inner nav-font" style="color: #6EB2F6;">
+  <a class="navbar-brand" href="home.html">NAME OF OUR APP</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+      </li> -->
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+      <a href="signup.html"><button class="btn btn-secondary my-2 my-sm-0">Sign Up</button></a>
+      <a href="login.html"><button class="btn btn-secondary my-2 my-sm-0">Login</button></a>
+  </div>
+</nav>
+    <form class="form-signin">
   <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email"  name="username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" name = "password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-</div>
-<button class="btn btn-lg btn-primary btn-block" type="submit"><a href="/auth2"> Register </a> </button>
-
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
-
-
 </form>
 </body>
 </html>
