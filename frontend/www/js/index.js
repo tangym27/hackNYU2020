@@ -44,7 +44,6 @@ let app = {
 };
 
 app.initialize();
-alert("a");
 
 let coords = {"latitude": undefined, "longitude": undefined};
 function invadePrivacy(){
@@ -71,4 +70,3 @@ function invadePrivacy(){
     );
 }
 invadePrivacy();
-alert('b');
