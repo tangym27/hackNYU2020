@@ -7,7 +7,7 @@ def username(username):
     DB_FILE="./data/DAC.db"
     db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
     c = db.cursor()
-    user_exists = 'SELECT username FROM usersInfo WHERE usersInfo.username = (?);'
+    user_exists = 'SELECT username FROM usersAccounts WHERE usersAccounts.username = (?);'
     c.execute(user_exists,(username,))
     userList = c.fetchall()
     return userList # empty list if person isnt there otherwise okay.
@@ -16,10 +16,10 @@ def password(username):
     DB_FILE="./data/DAC.db"
     db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
     c = db.cursor()
-    get_password = 'SELECT password FROM usersInfo WHERE usersInfo.username = (?)'
+    get_password = 'SELECT password FROM usersAccounts WHERE usersAccounts.username = (?)'
     c.execute(get_password,(username,))
     password = c.fetchone()
-    return password # returns the password for a given username
+    return password[0] # returns the password for a given username
 
 
 def getAllRestaurants():

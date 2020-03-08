@@ -5,7 +5,6 @@ import sqlite3 #imports sqlite
 def usersAccounts(): #creates the users db
     DB_FILE="./data/DAC.db"
     db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
-    # db.execute("PRAGMA foreign_keys = 1")
 
     c = db.cursor() #facilitates db operations
     command = "CREATE TABLE usersAccounts(id INTEGER PRIMARY KEY AUTOINCREMENT, fullName TEXT, username TEXT, password TEXT, rating REAL, longitude REAL, latitude REAL)"
@@ -42,9 +41,16 @@ def dietaryRestrictions():
 
 def main(): #calls all of the functions to build the databases
     try:
+        print("first line")
         usersAccounts()
+        print("worked")
+
         restaurantsAccounts()
+        print("worked")
+
         matches()
+        print("worked")
+
         dietaryRestrictions()
         print("worked")
     except:
