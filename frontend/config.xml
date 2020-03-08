@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.front.end" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FrontEnd</name>
+    <name>GitGrub</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        GitGrub
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="" href="">
+        GitGrub Team
     </author>
-    <content src="index.html" />
+    <content src="localhost:8080/index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
