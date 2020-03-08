@@ -87,6 +87,16 @@ def getRestaurantLocation(username):
     db.close()
     return(location[0])
 
+def getActiveMatches(username):
+    id = str(getID(username))
+    DB_FILE='./data/DAC.db'
+    db = sqlite3.connect(DB_FILE)
+    c = db.cursor()
+    command = 'SELECT * FROM matches WHERE status = 1;'
+    c.execute(command)
+    matches = c.fetchall()
+    return matches
+
 # def updateRatings(username, rating):
 #     DB_FILE="./data/DAC.db"
 #     db = sqlite3.connect(DB_FILE)
