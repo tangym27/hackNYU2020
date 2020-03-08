@@ -111,6 +111,9 @@ def decimal(number):
 def single_user():
     return get_users_by_ID(get_db())
 
+@app.route('/activematches')
+def activematches():
+    return getActiveMatches(username)
 
 
 # ________________________________
